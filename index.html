@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ELY SHIVA</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+
+    <!-- Critical CSS -->
+    <style>*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}html,body{height:100%;width:100%;font-family:"Poppins",sans-serif;font-weight:400;color:#000;background:#fff;line-height:1.4;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.container{padding:0 20px}@media(min-width:769px){.container{padding:0 30px;max-width:1728px;margin:0 auto}}.header{background:linear-gradient(180deg,rgba(0,0,0,.2) 0,rgba(0,0,0,0) 100%);position:absolute;top:0;left:0;width:100%;z-index:10;padding:20px 0}.header__container{display:flex;justify-content:space-between;align-items:flex-start}.header__nav-mobile{display:flex;justify-content:space-between;align-items:flex-start;width:100%}.header__nav-mobile__left{display:flex;align-items:flex-start;gap:20px}.header__cart{margin-left:20px}.header__icon{color:#fff}@media(min-width:769px){.header{padding:30px 0}.header__nav-mobile{display:none}.header__nav{display:block}.header__nav ul{display:flex;gap:40px}.header__nav a,.header__nav-right a{color:#fff;font-size:16px}.header__nav-right{display:flex;align-items:flex-start}.header__nav-right a{margin-left:40px}.header__nav-right a:last-child{margin-left:20px}.header__nav a:hover,.header__nav-right a:hover,.header__nav-right a:hover svg{color:#888}}.hero{position:relative;width:100%;height:100vh;overflow:hidden}.hero__image img{width:100%;min-height:100vh;object-fit:cover;object-position:top}.hero__content{position:absolute;bottom:0;left:0;right:0;z-index:2;color:#fff;text-align:left}.hero__icon{color:#fff;width:221px;height:32px}.hero__subtitle-box{display:flex;flex-direction:column;width:100%;padding:30px 0}.hero__dark-overlay{position:absolute;z-index:1;bottom:0;width:100%;height:310px;background:linear-gradient(180deg,rgba(0,0,0,0) 0,rgba(0,0,0,.2) 100%)}.hero__content p{font-family:"Playfair Display",serif;font-weight:300;letter-spacing:-1px;font-size:26px;margin-bottom:30px}.btn{display:inline-block;cursor:pointer;text-decoration:none;padding:19px 20px;font-size:14px;font-weight:500;line-height:1;transition:.5s ease;white-space:nowrap;border:1px solid #fff;color:#fff;background:0 0}.btn:hover{background:#000;border-color:#000;color:#fff}@media(min-width:769px){.hero__content svg{width:596px;height:86px}.hero__subtitle-box{flex-direction:row;gap:30px;padding:52px 0}.hero__content p{font-size:36px}}</style>  
+
+    <link rel="stylesheet" href="/css/styles.css" media="print" onload="this.media='all';">
+    <noscript><link rel="stylesheet" href="/css/styles.css"></noscript>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container header__container">
+        <div class="header__nav-mobile">
+          <div class="header__nav-mobile__left">
+            <div class="header__burger-btn" aria-label="Open burger menu">
+              <svg class="header__icon" width="18" height="10" aria-hidden="true">
+                <use xlink:href="#burger"></use>
+              </svg>
+            </div>
+
+            <a href="#" class="header__logo">
+              <svg class="header__icon" width="125" height="18" role="img" aria-label="ELY SHIVA logo">
+                <use xlink:href="#logo"></use>
+              </svg>
+            </a>
+          </div>
+
+          <div>
+            <a href="#">
+              <svg class="header__icon" width="8" height="12">
+                <use xlink:href="#flag"></use>
+              </svg>
+            </a>
+            <a href="#" class="header__cart">
+              <svg class="header__icon" width="14" height="13">
+                <use xlink:href="#cart"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <nav class="header__nav" aria-label="Main navigation">
+          <ul>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Collections</a></li>
+            <li><a href="#">Explore</a></li>
+          </ul>
+        </nav>
+
+        <div class="header__nav-right">
+          <a href="#">Search</a>
+          <a href="#">Account</a>
+          <a href="#" class="header__favorites">
+            <svg class="header__icon" width="8" height="12">
+              <use xlink:href="#flag"></use>
+            </svg>
+          </a>
+          <a href="#" class="header__cart">
+            <svg class="header__icon" width="14" height="13">
+              <use xlink:href="#cart"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero__image">
+        <picture>
+          <source srcset="/assets/hero-desk.webp" type="image/webp" media="(min-width: 769px)" />
+          <img
+            src="/assets/hero-mob.webp"
+            alt="ELY SHIVA Hero Banner"
+            loading="lazy"
+            width="768"
+            height="auto"
+          />
+        </picture>
+      </div>
+
+      <div class="hero__content container">
+        <h1>
+          <svg class="hero__icon" width="596" height="86" role="presentation">
+            <use xlink:href="#logo"></use>
+          </svg>
+        </h1>
+
+        <div class="hero__subtitle-box">
+          <p>
+            Discover the Spring Collection. Evoke the captivating beauty of the
+            French Riviera.
+          </p>
+          <a href="#" class="btn btn-transperent-white">Shop Now</a>
+        </div>
+      </div>
+      <div class="hero__dark-overlay"></div>
+    </section>
+
+    <!-- Duo Cards -->
+    <section class="duo-cards">
+      <div class="duo-cards__wrapper">
+        <div class="duo-cards__card">
+          <picture>
+            <source srcset="/assets/collection1-d.webp" media="(min-width: 769px)" />
+            <img
+              src="/assets/collection1-m.webp"
+              alt="An intimate dialogue between tailoring and luxury"
+              loading="lazy"
+              width="768"
+              height="auto"
+            />
+          </picture>
+          <div class="duo-cards__caption">
+            <p class="duo-cards__caption-subtitle">New In</p>
+            <h3>A modern leather jacket crafted for transitional seasons.</h3>
+          </div>
+        </div>
+
+        <div class="duo-cards__card">
+          <picture>
+            <source srcset="/assets/collection2-d.webp" media="(min-width: 769px)" />
+            <img
+              src="/assets/collection2-m.webp"
+              alt="A modern leather jacket"
+              loading="lazy"
+              width="768"
+              height="auto"
+            />
+          </picture>
+          <div class="duo-cards__caption">
+            <p class="duo-cards__caption-subtitle">Autumn Winter '24</p>
+            <h3>An intimate dialogue beteween tailoring and luxury</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Fullsize Banner -->
+    <section>
+      <div class="fullsize-banner__image">
+        <picture>
+          <source srcset="/assets/leather-essentials-d.webp" media="(min-width: 769px)" />
+          <img
+            src="/assets/leather-essentials-m.webp"
+            alt="Leather Essentials Look"
+            loading="lazy"
+            width="768"
+            height="auto"
+          />
+        </picture>
+      </div>
+
+      <div class="fullsize-banner__content container">
+        <h2>Leather Essentials</h2>
+
+        <div>
+          <p>
+            Sleek silhouettes meticulously constructed with soft, buttery
+            leather to contour the body and empower everyday dressing. Each
+            versatile piece exudes an effortless polish that only the finest
+            leather can translate.
+          </p>
+          <a href="#" class="btn btn-transperent-black">Shop Now</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Collestions Carousel -->
+    <section>
+      <div class="collestions-carousel__wrapper">
+        <a href="#" class="collestions-carousel__item">
+          <picture>
+            <source srcset="/assets/collection-3-d.webp" media="(min-width: 769px)" />
+            <img
+              src="/assets/collection-3-m.webp"
+              alt="New Arrivals"
+              loading="lazy"
+              width="768"
+              height="auto"
+            />
+          </picture>
+          <div class="collestions-carousel__label">New Arrivals</div>
+        </a>
+
+        <a href="#" class="collestions-carousel__item">
+          <picture>
+            <source srcset="/assets/collection-4-d.webp" media="(min-width: 769px)" />
+            <img
+              src="/assets/collection-4-m.webp"
+              alt="Autumn Winter '24"
+              loading="lazy"
+              width="768"
+              height="auto"
+            />
+          </picture>
+          <div class="collestions-carousel__label">Autumn Winter '24</div>
+        </a>
+
+        <a href="#" class="collestions-carousel__item">
+          <picture>
+            <source srcset="/assets/collection-5-d.webp" media="(min-width: 769px)" />
+            <img
+              src="/assets/collection-5-m.webp"
+              alt="Footwear Essentials"
+              loading="lazy"
+              width="768"
+              height="auto"
+            />
+          </picture>
+          <div class="collestions-carousel__label">Bestsellers</div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Bestsellers -->
+    <section>
+      <div class="container">
+        <h2 class="bestsellers__title">Bestsellers</h2>
+      </div>
+
+      <div class="bestsellers__grid">
+        <div class="bestsellers__product-card">
+          <picture>
+            <source srcset="/assets/product-1-d.webp" media="(min-width: 769px)" />
+            <img
+              src="/assets/product-1-m.webp"
+              alt="Frank Jacket in Cotton"
+              loading="lazy"
+              width="768"
+              height="auto"
+            />
+          </picture>
+          <div class="bestsellers__product-info">
+            <div>
+              <h3>Frank Jacket in Cotton</h3>
+              <p class="bestsellers__price">$655.00</p>
+              <p class="bestsellers__product-label"></p>
+            </div>
+
+            <span>
+              <svg class="bestsellers__product-card__favorites-icon" width="8" height="12">
+                <use xlink:href="#flag"></use>
+              </svg>
+            </span>
+          </div>
+        </div>
+
+        <div class="bestsellers__product-card">
+          <picture>
+            <source srcset="/assets/product-2-d.webp" media="(min-width: 769px)" />
+            <img
+              src="/assets/product-2-m.webp"
+              alt="Penna Shirt in Corduroy"
+              loading="lazy"
+              width="768"
+              height="auto"
+            />
+          </picture>
+          <div class="bestsellers__product-info">
+            <div>
+              <h3>Penna Shirt in Corduroy</h3>
+              <p class="bestsellers__price">$455.00</p>
+              <p class="bestsellers__product-label">New</p>
+            </div>
+
+            <span>
+              <svg class="bestsellers__product-card__favorites-icon" width="8" height="12">
+                <use xlink:href="#flag"></use>
+              </svg>
+            </span>
+          </div>
+        </div>
+
+        <div class="bestsellers__product-card">
+          <picture>
+            <source srcset="/assets/product-3-d.webp" media="(min-width: 769px)" />
+            <img
+              src="/assets/product-3-m.webp"
+              alt="Blaine Top in Cotton"
+              loading="lazy"
+              width="768"
+              height="auto"
+            />
+          </picture>
+          <div class="bestsellers__product-info">
+            <div>
+              <h3>Blaine Top in Cotton</h3>
+              <p class="bestsellers__price">$455.00</p>
+              <p class="bestsellers__product-label"></p>
+            </div>
+
+            <span>
+              <svg class="bestsellers__product-card__favorites-icon" width="8" height="12">
+                <use xlink:href="#flag"></use>
+              </svg>
+            </span>
+          </div>
+        </div>
+
+        <div class="bestsellers__product-card">
+          <picture>
+            <source srcset="/assets/product-4-d.webp" media="(min-width: 769px)" />
+            <img
+              src="/assets/product-4-m.webp"
+              alt="Burty Jean in Denim"
+              loading="lazy"
+              width="768"
+              height="auto"
+            />
+          </picture>
+          <div class="bestsellers__product-info">
+            <div>
+              <h3>Burty Jean in Denim</h3>
+              <p class="bestsellers__price">$855.00</p>
+              <p class="bestsellers__product-label">Sold out</p>
+            </div>
+
+            <span>
+              <svg class="bestsellers__product-card__favorites-icon" width="8" height="12">
+                <use xlink:href="#flag"></use>
+              </svg>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer__wrapper">
+        <div class="footer__logo">
+          <svg width="235" height="34" role="presentation">
+            <use xlink:href="#logo"></use>
+          </svg>
+        </div>
+
+        <div class="footer__links">
+          <div class="footer__column">
+            <h4>Brand</h4>
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Store Locator</a></li>
+              <li><a href="#">Stockists</a></li>
+            </ul>
+          </div>
+          <div class="footer__column">
+            <h4>Customer Care</h4>
+            <ul>
+              <li><a href="#">Returns & Exchanges</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Cookie Policy</a></li>
+            </ul>
+          </div>
+          <div class="footer__column">
+            <h4>Social</h4>
+            <ul>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">TikTok</a></li>
+              <li><a href="#">Pinterest</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer__newsletter">
+          <h4>Subscribe to the newsletter</h4>
+          <p>Receive updates, early access to private sales and 10% off<br>your first order from ELY SHIVA</p>
+
+          <form action="#" method="post" class="newsletter-form">
+            <label for="newsletter-email" class="visually-hidden">Your email</label>
+            <input id="newsletter-email" type="email" placeholder="E-mail" required />
+            <button type="submit" class="btn btn-transperent-black">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer__bottom container">
+        <p>&copy; 2024 ELY SHIVA. All rights reserved.</p>
+        <div class="footer__country">
+          <span>Italy, € EUR</span>
+          <button type="button" aria-label="Change country and currency">
+            <svg class="footer__arrrow" width="15" height="6">
+              <use xlink:href="#arrow-down"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </footer>
+
+    <!-- SVG Sprite -->
+    <svg width="0" height="0" style="display: none" role="presentation">
+      <symbol id="burger" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 12">
+        <path d="M0 1H18" stroke="currentColor"></path>
+        <path d="M0 6H18" stroke="currentColor"></path>
+        <path d="M0 11H18" stroke="currentColor"></path>
+      </symbol>
+
+      <symbol id="flag" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 14">
+        <path d="M9 0.5H1V12.5L5 9.36957L9 12.5V0.5Z" stroke="currentColor"></path>
+        <path d="M1 1.5H9" stroke="currentColor"></path>
+      </symbol>
+
+      <symbol id="cart" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 15">
+        <path d="M10 7V3C10 1.89543 9.10457 1 8 1V1C6.89543 1 6 1.89543 6 3V7" stroke="currentColor"></path>
+        <rect x="1" y="4" width="14" height="10" stroke="currentColor"></rect>
+        <path d="M1 5H15" stroke="currentColor"></path>
+      </symbol>
+
+      <symbol id="logo" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 597 87">
+        <g clip-path="url(#clip0_2140_4435)">
+          <path d="M563.816 1.93555H548.857L514.169 84.5668H532.473L539.339 67.9911H572.02L578.257 84.5668H596.959L563.816 1.93555ZM543.393 54.8087L556.146 16.8305L568.906 54.8087H543.385H543.393Z" fill="currentColor"></path>
+          <path d="M68.2859 69.2496V84.5668H0V1.93555H67.6327V15.2773H15.7234V19.6741C15.7154 23.4417 15.7154 27.2012 15.7154 30.8812V34.6567H58.9427V49.1136H15.0383V69.2417H31.1361C33.6849 69.3134 35.7878 69.3213 37.7711 69.2735C38.5278 69.2576 39.2845 69.2576 40.0412 69.2496H49.8782C51.9412 69.2576 53.9963 69.2656 56.0433 69.2656H57.5487C59.094 69.2735 60.703 69.2815 62.2801 69.2417H68.2779L68.2859 69.2496Z" fill="currentColor"></path>
+          <path d="M148.551 70.5241H98.5928V1.93555H83.7217V84.5668H148.551V70.5241Z" fill="currentColor"></path>
+          <path d="M431.252 1.93555H416.341V84.5668H431.252V1.93555Z" fill="currentColor"></path>
+          <path d="M310.642 50.9614C308.324 45.784 303.999 42.3749 299.61 40.1446C295.213 37.9143 290.745 36.8629 288.14 36.393C283.911 35.6363 279.538 35.3177 275.308 35.015H275.189C270.075 34.6326 264.786 34.2583 259.688 33.0794C255.236 32.0678 252.591 30.1801 251.795 27.4799C250.704 23.776 253.73 20.112 257.195 18.1207C262.819 14.9187 269.932 13.931 277.228 15.3329C282.644 16.3764 288.116 18.6703 293.955 22.3184L306.357 13.0071C297.467 6.09325 285.312 1.33005 273.779 0.238811C256.255 -1.41796 246.45 5.6233 241.329 11.8202C235.721 18.6066 234.367 28.1729 238.031 35.0707C242.547 43.5696 252.783 46.4371 258.478 47.377C262.373 48.0302 266.395 48.2532 270.29 48.4842L270.712 48.5081C275.005 48.755 279.45 49.0178 283.759 49.8144C286.005 50.2365 288.897 50.9215 291.31 52.5385C293.859 54.259 295.476 56.8556 295.62 59.4682C295.763 62.0888 294.465 64.8129 292.131 66.7644C290.386 68.2379 288.084 69.3292 284.93 70.1814C272.218 73.6145 258.032 70.5399 247.9 62.1366L247.804 62.0728C247.661 61.9454 247.518 61.8339 247.374 61.7144L233.515 72.1409C245.582 81.1496 260.525 86.1039 275.619 86.1039C283.656 86.096 294.966 84.5587 303.394 77.3103C311.375 70.4204 314.433 59.3328 310.666 50.9454L310.642 50.9614Z" fill="currentColor"></path>
+          <path d="M338.682 84.5668V47.0904H385.773V84.5668H401.233V1.93555H385.326V33.4061H338.682V1.93555H322.768V84.5668H338.682Z" fill="currentColor"></path>
+          <path d="M527.799 1.93555L493.301 84.5588H477.395L443.455 1.93555H460.278L485.655 67.8318L510.403 1.93555H527.799Z" fill="currentColor"></path>
+          <path d="M209.428 1.92773L178.937 50.8342V84.559H164.01V50.8262L133.639 1.92773H150.66L171.473 35.5091L192.287 1.92773H209.428Z" fill="currentColor"></path>
+        </g>
+        <defs>
+          <clipPath id="clip0_2140_4435">
+            <rect width="596.962" height="86.12" fill="currentColor"></rect>
+          </clipPath>
+        </defs>
+      </symbol>
+
+      <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" id="arrow-down">
+        <path d="M1 1L6 5L11 1" stroke="currentColor"></path>
+      </symbol>
+    </svg>
+  </body>
+</html>
